@@ -9,7 +9,22 @@ var routes = [
             res.write(JSON.stringify(friends.getFriends()));
             res.end();
         }
-    }
+    },
+    {
+        path: "/api/friends",
+        method: "POST",
+        func: function (req, res) {
+            var data = req.body;
+            if (data && data.name && data.photoUrl && data.scores && data.scores.length == 10) {
+                friends.addFriend(data.name, data.photoUrl, data.scores);
+                res.send(true);
+            } else {
+                res.send(false);
+            }
+
+            // todo: perform compatability servey and send result
+        }
+    },
 ];
 
 module.exports = {

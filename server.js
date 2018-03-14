@@ -30,6 +30,10 @@ function addRoutes(routes) {
 
 var app = express();
 var PORT = process.env.PORT || 80;
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 addRoutes(apiRoutes.routes);
 
 app.get('/', (req, res) => {
