@@ -10,6 +10,13 @@ var routes = [
         }
     },
     {
+        path: "/app.js",
+        method: "GET",
+        func: function (req, res) {
+            sendFile(res, 'app.js');
+        }
+    },
+    {
         path: "/*",
         method: "GET",
         func: function (req, res) {
