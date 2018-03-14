@@ -7,7 +7,6 @@ var routes = [
         method: "GET",
         func: function (req, res) {
             sendFile(res, 'survey.html');
-            // res.sendFile(path.join(process.env.htmlRoot, 'survey.html'));
         }
     },
     {
