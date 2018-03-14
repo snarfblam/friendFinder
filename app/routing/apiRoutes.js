@@ -5,9 +5,10 @@ var routes = [
         path: "/api/friends",
         method: "GET",
         func: function (req, res) {
-            res.writeHead(200, { "Content-Type": "text/json" });
-            res.write(JSON.stringify(friends.getFriends()));
-            res.end();
+            // res.writeHead(200, { "Content-Type": "text/json" });
+            // res.write(JSON.stringify(friends.getFriends()));
+            // res.end();
+            res.json(friends.getFriends());
         }
     },
     {
@@ -15,14 +16,19 @@ var routes = [
         method: "POST",
         func: function (req, res) {
             var data = req.body;
+            var responseData;
+
             if (data && data.name && data.photoUrl && data.scores && data.scores.length == 10) {
-                friends.addFriend(data.name, data.photoUrl, data.scores);
-                res.send(true);
+                responseData = friends.addFriend(data.name, data.photoUrl, data.scores);
+                responseData = responseData || { error: "No previous entries to compare to." };
             } else {
-                res.send(false);
+                responseData = response || { error: "User data invalid." };
             }
 
-            // todo: perform compatability servey and send result
+            // res.writeHead(200, { "Content-Type": "text/json" });
+            // res.write(JSON.stringify(friends.getFriends()));
+            // res.end();
+            res.json(responseData);
         }
     },
 ];

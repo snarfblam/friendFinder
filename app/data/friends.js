@@ -25,7 +25,7 @@ function getClosestMatch(newEntry) {
     var closest = null;
     var diff = 1000;
     friendList.forEach(friend => {
-        var newDiff = compareFriends(newEntry);
+        var newDiff = compareFriends(friend, newEntry);
         if (newDiff < diff) {
             diff = newDiff;
             closest = friend;
