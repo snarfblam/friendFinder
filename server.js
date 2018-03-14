@@ -36,6 +36,7 @@ var PORT = process.env.PORT || 80;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+app.use(express.static(path.join('app', 'public_html')));
 
 addRoutes(apiRoutes.routes);
 addRoutes(htmlRoutes.routes);
