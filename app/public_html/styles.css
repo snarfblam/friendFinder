@@ -1,0 +1,108 @@
+html {
+    font-family: sans-serif;
+}
+
+.groupdot li {
+    list-style-type: none;
+}
+.groupdot input[type=radio] {
+    display:none;
+}
+.groupdot input[type=radio] + label {
+    height: 16px;
+    width: 16px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    cursor: pointer;
+}
+.groupdot input[type=radio].gd1 + label {
+    background: url("uncheck4.png"); 
+}
+.groupdot input[type=radio].gd1:hover + label {
+    background: url("hcheck1.png"); 
+}
+.groupdot input[type=radio].gd1:checked + label {
+    background: url("check1.png"); 
+}
+
+.groupdot input[type=radio].gd2 + label {
+    background: url("uncheck4.png"); 
+}
+.groupdot input[type=radio].gd2:hover + label {
+    background: url("hcheck2.png"); 
+}
+.groupdot input[type=radio].gd2:checked + label {
+    background: url("check2.png"); 
+}
+
+.groupdot input[type=radio].gd3 + label {
+    background: url("uncheck4.png"); 
+}
+.groupdot input[type=radio].gd3:hover + label {
+    background: url("hcheck3.png"); 
+}
+.groupdot input[type=radio].gd3:checked + label {
+    background: url("check3.png"); 
+}
+
+.groupdot input[type=radio].gd4 + label {
+    background: url("uncheck4.png"); 
+}
+.groupdot input[type=radio].gd4:hover + label {
+    background: url("hcheck4.png"); 
+}
+.groupdot input[type=radio].gd4:checked + label {
+    background: url("check4.png"); 
+}
+
+.groupdot input[type=radio].gd5 + label {
+    background: url("uncheck4.png"); 
+}
+.groupdot input[type=radio].gd5:hover + label {
+    background: url("hcheck5.png"); 
+}
+.groupdot input[type=radio].gd5:checked + label {
+    background: url("check5.png"); 
+}
+
+.dimmed {
+    font-style: italic;
+    color: #BBB;
+}
+
+.qval1 {
+    color: #CAA;
+}
+
+.qval2 {
+    color: #B8A8AA;
+}
+
+.qval3 {
+    color: #BBA;
+}
+
+.qval4 {
+    color: #ACA;
+}
+
+.qval5 {
+    color: #ADA;
+}
+
+.qheader {
+    font-size: 1.2em;
+    color: #080;
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* .groupdot input[type=radio]:before { 
+    content: url("unchecked.png"); 
+    display:inline-block; 
+    width: 18px;
+    height: 18px;
+    opacity: 0;
+} */
+/* .groupdot input[type=radio]:checked:before { 
+    content: url("checked.png"); 
+} */
