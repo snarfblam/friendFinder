@@ -2,6 +2,9 @@ html {
     font-family: sans-serif;
 }
 
+.groupdot {
+    padding-left: 0;
+}
 .groupdot li {
     list-style-type: none;
 }
@@ -14,6 +17,9 @@ html {
     display:inline-block;
     padding: 0 0 0 0px;
     cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+    transform: translate(0px, 2px);
 }
 .groupdot input[type=radio].gd1 + label {
     background: url("uncheck4.png"); 
