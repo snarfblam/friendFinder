@@ -4,10 +4,18 @@ html {
 
 .groupdot {
     padding-left: 0;
+    counter-reset: gd;
 }
 .groupdot li {
     list-style-type: none;
+    counter-increment: gd;
 }
+
+.groupdot li:before {
+    content: counter(gd);
+    display: inline;
+}
+
 .groupdot input[type=radio] {
     display:none;
 }
