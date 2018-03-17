@@ -17,7 +17,10 @@ html {
 }
 
 .groupdot input[type=radio] {
-    display:none;
+    /* display:none; */
+    /* Need input displayed for keyboard support */
+    position: absolute;
+    left: -99999;
 }
 .groupdot input[type=radio] + label {
     height: 16px;
@@ -77,6 +80,10 @@ html {
 }
 .groupdot input[type=radio].gd5:checked + label {
     background: url("ui/check5.png"); 
+}
+.groupdot label {
+    tab-index: 0;
+    nav-index: 0;
 }
 
 .dimmed {
