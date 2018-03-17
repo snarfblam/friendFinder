@@ -20,7 +20,7 @@ html {
     /* display:none; */
     /* Need input displayed for keyboard support */
     position: absolute;
-    left: -99999;
+    left: -99999px;
 }
 .groupdot input[type=radio] + label {
     height: 16px;
@@ -84,6 +84,12 @@ html {
 .groupdot label {
     tab-index: 0;
     nav-index: 0;
+}
+.groupdot input[type=radio]:focus + label {
+    outline: orange 1px solid;
+    box-shadow: orange 0px 1px 3px;
+    outline-offset: -1px;
+    background: rgb(255, 206, 116);
 }
 
 .dimmed {
