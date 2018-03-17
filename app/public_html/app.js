@@ -18,6 +18,15 @@ function parseSurveyForm() {
 
 function markTextFieldInvalid(elementSelector) {
     // Need to create css and apply class
+    // error-notice-hidden {display: none}, error-notice-visible {display: inline};
+    /*
+    add to each li without a selected response
+    .survey-question-error::after {
+        content: "Please make a selection.";
+        color: red;
+        display: block;
+        font-weight: bold;
+    }*/
 }
 
 function markSurveyQuestionInvalid(index) {
