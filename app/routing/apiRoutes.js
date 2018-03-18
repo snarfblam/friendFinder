@@ -22,7 +22,7 @@ var routes = [
                 responseData = friends.addFriend(data.name, data.photoUrl, data.scores);
                 responseData = responseData || { error: "No previous entries to compare to." };
             } else {
-                responseData = response || { error: "User data invalid." };
+                responseData = responseData || { error: "User data invalid." };
             }
 
             // res.writeHead(200, { "Content-Type": "text/json" });

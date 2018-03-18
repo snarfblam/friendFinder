@@ -123,6 +123,45 @@ html {
     font-weight: bold;
     margin-right: 10px;
 }
+
+.survey-question-error::after {
+    content: " (required)";
+    color: red;
+    /* display: block; */
+    font-weight: bold;
+    padding-left: 18px;
+    margin-left: 8px;
+    background: url('ui/error.png');
+    background-repeat: no-repeat;
+}
+
+.survey-field-error::after {
+    content: " (required)";
+    color: red;
+    font-weight: bold;
+    padding-left: 18px;
+    margin-left: 8px;
+    background: url('ui/error.png');
+    background-repeat: no-repeat;
+}
+.survey-button-error::after {
+    content: " Get rid of the errors!";
+    color: red;
+    font-weight: bold;
+    padding-left: 18px;
+    margin-left: 8px;
+    background: url('ui/error.png');
+    background-repeat: no-repeat;
+}
+.survey-button-success::after {
+    content: " Ready to go!";
+    color: darkgreen;
+    font-weight: bold;
+    padding-left: 18px;
+    margin-left: 8px;
+    background: url('ui/success.png');
+    background-repeat: no-repeat;
+}
 /* .groupdot input[type=radio]:before { 
     content: url("unchecked.png"); 
     display:inline-block; 
