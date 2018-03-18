@@ -2,8 +2,20 @@
 
 Homework assignment. More readme goodness to come.
 
+## File Structure
+```
+▼ 📁 (friend-finder)    Package root
+├─▼ 📁 app                Application files
+| ├─● 📁 data               Data("base") code
+| ├─▼ 📁 public_html        Static content
+| | ├─▼ 📁 resources          Resources
+| | | └─● 📁 ui                 Widget resources
+| └─● 📁 routing            Strange way to handle routing
+├─● package.json          Package metadata
+└─● server.js             Entry point
+```
 
-## API documentation:
+## API documentation
 * `/api/friends` (GET) - Returns the complete friend list as JSON:
 
    ```typescript
