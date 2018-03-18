@@ -1,6 +1,10 @@
 # Friend Finder
 
-Homework assignment. More readme goodness to come.
+Friend Finder is the app to find friends. Find them, and then look at their picture. That's about it. But hey! I learned some things making it.
+
+## Using Friend Finder
+
+Visit the [live app](https://shrouded-refuge-51353.herokuapp.com). Open up the survey, and fill it out. Easy as pie.
 
 ## File Structure
 ```
