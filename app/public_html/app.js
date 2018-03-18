@@ -67,7 +67,9 @@ function processFormData(formData) {
             
         })
         .catch(function (err) {
-            alert("The bad happened.");
+            $$("#nfm-title").text("There was an error.");
+            $$("#nfm-content").text("There was en error connecting to the server.");
+            $$("#new-friend-modal").modal("show");
             console.log(err);
         });  
 }
