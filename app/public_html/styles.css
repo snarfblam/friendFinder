@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Limelight');
+/* @import url('https://fonts.googleapis.com/css?family=Limelight'); */
+@import url('https://fonts.googleapis.com/css?family=Exo:900');
 
 html {
     font-family: 'comic sans ms', sans-serif;
@@ -33,7 +34,8 @@ body {
 }
 
 .lime-light {
-    font-family: Limelight, sans-serif;    
+    /* font-family: Limelight, sans-serif;     */
+    font-family: Exo, sans-serif;    
 }
 
 .page-header-text {
@@ -41,6 +43,33 @@ body {
     text-align: center;
     margin-top: 0.5em;
     text-shadow: 2px 2px 0px black;
+    vertical-align: bottom;    
+}
+
+#submit-button {
+    background: #8f8fbb;
+    border-color: #515182;
+}
+
+.page-header-text:first-letter {
+    display: inline-block;
+    width: 1em;
+    height: 2em;
+    background: white;
+}
+.page-header-text::before {
+    content: 'F';
+    display: inline-block;
+    width: 1.5em;
+    text-align: right;
+    background: white;
+    padding-top: .5em;
+    padding-left: .5em;
+    padding-right: .1em;
+    border-radius: 8px;
+    /* text-shadow: -1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black; */
+    color: #3d3e49;
+    text-shadow: none;
 }
 
 .groupdot {
@@ -157,9 +186,9 @@ p.qheader {
 }
 .groupdot input[type=radio]:focus + label {
     outline: orange 1px solid;
-    box-shadow: orange 0px 1px 3px;
+    /* box-shadow: orange 0px 1px 3px; */
     outline-offset: -1px;
-    background: rgb(255, 206, 116);
+    /* background: rgba(255, 206, 116, 0.25); */
 }
 
 .dimmed {
@@ -209,7 +238,7 @@ p.qheader {
     background-repeat: no-repeat;
 }
 .survey-button-error::after {
-    content: " Get rid of the errors!";
+    content: " There are errors.";
     color: red;
     font-weight: bold;
     padding-left: 18px;
@@ -220,7 +249,7 @@ p.qheader {
 .survey-button-success::after {
     content: " Ready to go!";
     color: darkgreen;
-    font-weight: bold;
+    /* font-weight: bold; */
     padding-left: 18px;
     margin-left: 8px;
     background: url('ui/success.png');
