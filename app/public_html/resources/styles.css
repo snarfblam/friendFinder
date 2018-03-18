@@ -1,318 +1,295 @@
-/* @import url('https://fonts.googleapis.com/css?family=Limelight'); */
-@import url('https://fonts.googleapis.com/css?family=Exo:900');
 
-html {
-    font-family: 'comic sans ms', sans-serif;
-    background: url('bg.png');
-}
-
-body {
-    background: none;
-}
-
-.main-content {
-    border-radius: 12px;
-    width: calc(100% - 20px);
-    max-width: 800px;
-    min-width: 320px;
-    margin: 20px auto;
-    box-shadow: inset 0px 0px 2px 0px black, 6px 7px 18px black;
-    padding: 1em;
-    background: white;
-}
-
-.footer-links {
-    color: white;
-    width: 800px;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-left: 1em;
-}
-
-.footer-links a{
-    color: #a5a5be;
-}
-
-.lime-light {
-    /* font-family: Limelight, sans-serif;     */
-    font-family: Exo, sans-serif;    
-}
-
-.page-header-text {
-    color: #dbdbe4;
-    text-align: center;
-    margin-top: 0.5em;
-    text-shadow: 2px 2px 0px black;
-    vertical-align: bottom;    
-}
-
-#ff button {
-    background: #8f8fbb;
-    border-color: #515182;
-}
-
-.page-header-text:first-letter {
-    display: inline-block;
-    width: 1em;
-    height: 2em;
-    background: white;
-}
-.page-header-text::before {
-    content: 'F';
-    display: inline-block;
-    width: 1.5em;
-    text-align: right;
-    background: white;
-    padding-top: .5em;
-    padding-left: .5em;
-    padding-right: .1em;
-    border-radius: 8px;
-    /* text-shadow: -1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black; */
-    color: #3d3e49;
-    text-shadow: none;
-}
-
-/* .ff-logo {
-    content: 'F';
-    display: inline-block;
-    width: 1.5em;
-    text-align: right;
-    background: #3d3e49;
-    padding-top: .5em;
-    padding-left: .5em;
-    padding-right: .1em;
-    border-radius: 8px;
-    color: white;
-    text-shadow: none;
-    font-size: 2rem;
-    font-family: Exo;
-    margin-left: auto;
-    margin-right: auto;
-} */
-.big-caps::first-letter {
-    font-size: 1.5em;
-    /* font-family: Exo, sans-serif; */
-    color: #3d3e49;
-}
-
-.groupdot {
-    padding-left: 0;
-    counter-reset: gd;
-    margin-bottom: 0;
-}
-.groupdot li {
-    list-style-type: none;
-    counter-increment: gd;
-    /* border-radius: 6px; */
-    /* background: #EEE; */
-    margin-bottom: 1em;
-    padding-bottom: 0.25em;
-}
-
-.groupdot li:last-child {
-    margin-bottom: 0;
-}
-
-p.qheader {
-    border-top: 2px solid #515182;
-    background: lightgray;
-    /* border-radius: 6px; */
-    margin-bottom: 0px;
-}
-.qnumber {
-    display:inline-block;
-    text-align: center;
-    font-size: 1.2em;
-    color: white;
-    /* font-weight: bold; */
-    margin-right: 10px;
-    background: #515182;
-    margin: -2px 0.6em 0 0;
-    padding: 2px 2px 7px 2px;
-    width: 2em;
-    /* border-top-left-radius: 6px; */
-    /* border-bottom-left-radius: 6px; */
-}
-/* .groupdot li:before {
-    content: counter(gd);
-    display: inline;
-} */
-
-.groupdot input[type=radio] {
-    /* display:none; */
-    /* Need input displayed for keyboard support */
-    position: absolute;
-    left: -99999px;
-}
-.groupdot input[type=radio] + label {
-    height: 16px;
-    width: 16px;
-    display:inline-block;
-    padding: 0 0 0 0px;
-    cursor: pointer;
-    margin-top: 0;
-    margin-bottom: 0;
-    transform: translate(0px, 2px);
-}
-.groupdot input[type=radio].gd1 + label {
-    background: url("ui/uncheck4.png"); 
-}
-.groupdot input[type=radio].gd1:hover + label {
-    background: url("ui/hcheck1.png"); 
-}
-.groupdot input[type=radio].gd1:checked + label {
-    background: url("ui/check1.png"); 
-}
-
-.groupdot input[type=radio].gd2 + label {
-    background: url("ui/uncheck4.png"); 
-}
-.groupdot input[type=radio].gd2:hover + label {
-    background: url("ui/hcheck2.png"); 
-}
-.groupdot input[type=radio].gd2:checked + label {
-    background: url("ui/check2.png"); 
-}
-
-.groupdot input[type=radio].gd3 + label {
-    background: url("ui/uncheck4.png"); 
-}
-.groupdot input[type=radio].gd3:hover + label {
-    background: url("ui/hcheck3.png"); 
-}
-.groupdot input[type=radio].gd3:checked + label {
-    background: url("ui/check3.png"); 
-}
-
-.groupdot input[type=radio].gd4 + label {
-    background: url("ui/uncheck4.png"); 
-}
-.groupdot input[type=radio].gd4:hover + label {
-    background: url("ui/hcheck4.png"); 
-}
-.groupdot input[type=radio].gd4:checked + label {
-    background: url("ui/check4.png"); 
-}
-
-.groupdot input[type=radio].gd5 + label {
-    background: url("ui/uncheck4.png"); 
-}
-.groupdot input[type=radio].gd5:hover + label {
-    background: url("ui/hcheck5.png"); 
-}
-.groupdot input[type=radio].gd5:checked + label {
-    background: url("ui/check5.png"); 
-}
-.groupdot label {
-    tab-index: 0;
-    nav-index: 0;
-}
-.groupdot input[type=radio]:focus + label {
-    outline: orange 1px solid;
-    /* box-shadow: orange 0px 1px 3px; */
-    outline-offset: -1px;
-    /* background: rgba(255, 206, 116, 0.25); */
-}
-
-.dimmed {
-    font-style: italic;
-    color: #BBB;
-}
-
-.qval1 {
-    color: #CAA;
-}
-
-.qval2 {
-    color: #B8A8AA;
-}
-
-.qval3 {
-    color: #BBA;
-}
-
-.qval4 {
-    color: #ACA;
-}
-
-.qval5 {
-    color: rgb(148, 196, 148);
-}
+/*/////// Fonts ///////////////////////////////////*/
+    @import url('https://fonts.googleapis.com/css?family=Exo:900');
 
 
-.survey-question-error::after {
-    content: " (required)";
-    color: red;
-    /* display: block; */
-    /* font-weight: bold; */
-    padding-left: 18px;
-    margin-left: 8px;
-    background: url('ui/error.png');
-    background-repeat: no-repeat;
-}
+/*/////// Basic elements //////////////////////////*/
 
-.survey-field-error::after {
-    content: " (required)";
-    color: red;
-    /* font-weight: bold; */
-    padding-left: 18px;
-    margin-left: 8px;
-    background: url('ui/error.png');
-    background-repeat: no-repeat;
-}
-.survey-button-error::after {
-    content: " There are errors.";
-    color: red;
-    font-weight: bold;
-    padding-left: 18px;
-    margin-left: 8px;
-    background: url('ui/error.png');
-    background-repeat: no-repeat;
-}
-.survey-button-success::after {
-    content: " Ready to go!";
-    color: darkgreen;
-    /* font-weight: bold; */
-    padding-left: 18px;
-    margin-left: 8px;
-    background: url('ui/success.png');
-    background-repeat: no-repeat;
-}
-/* .groupdot input[type=radio]:before { 
-    content: url("unchecked.png"); 
-    display:inline-block; 
-    width: 18px;
-    height: 18px;
-    opacity: 0;
-} */
-/* .groupdot input[type=radio]:checked:before { 
-    content: url("checked.png"); 
-} */
+    html {
+        font-family: 'comic sans ms', sans-serif;
+        background: url('bg.png');
+    }
 
-.hidden-modal {
-    /* display: none; */
-    position: fixed;
-    top: 100px;
-    left: 100px;
-    background: white;
-}
+    body {
+        background: none;
+    }
 
-/*/ Bootstrap restyling /////////////////////*/
+    .main-content {
+        border-radius: 12px;
+        width: calc(100% - 20px);
+        max-width: 800px;
+        min-width: 320px;
+        margin: 20px auto;
+        box-shadow: inset 0px 0px 2px 0px black, 6px 7px 18px black;
+        padding: 1em;
+        background: white;
+    }
 
-.card-header:first-child {
-    font-size: 2em;
-    border: none;
-    background: #dbdbe4;
-    padding: .2em;
-    padding-left: 1em;
-}
+    #ff button.ff,
+    #ff .btn-primary {
+        background: #8f8fbb;
+        border-color: #515182;
+    }
 
-.card {
-    border: 2px solid #515182;
-    background: #f4f4f7;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
 
-@media screen and (max-width: 840px) {
-}
+/*/////// Other element styles ////////////////////*/
+
+    .big-caps::first-letter {
+        font-size: 1.5em;
+        /* font-family: Exo, sans-serif; */
+        color: #3d3e49;
+    }
+
+    .hidden-modal {
+        /* display: none; */
+        position: fixed;
+        top: 100px;
+        left: 100px;
+        background: white;
+    }
+    
+    
+/*/////// Header/footer ///////////////////////////*/
+
+    .page-header-text {
+        color: #dbdbe4;
+        text-align: center;
+        margin-top: 0.5em;
+        text-shadow: 2px 2px 0px black;
+        vertical-align: bottom;    
+    }
+
+    .footer-links {
+        color: white;
+        width: 800px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding-left: 1em;
+    }
+
+    .footer-links a{
+        color: #a5a5be;
+    }
+
+    .lime-light {
+        font-family: Exo, sans-serif;    
+    }
+
+    .page-header-text::before {
+        content: 'F';
+        display: inline-block;
+        width: 1.5em;
+        text-align: right;
+        background: white;
+        padding-top: .5em;
+        padding-left: .5em;
+        padding-right: .1em;
+        border-radius: 8px;
+        /* text-shadow: -1px -1px 0px black, 1px 1px 0px black, -1px 1px 0px black, 1px -1px 0px black; */
+        color: #3d3e49;
+        text-shadow: none;
+    }
+
+
+/*/////// Survey form /////////////////////////////*/
+    
+    /* General */
+        .groupdot {
+            padding-left: 0;
+            counter-reset: gd;
+            margin-bottom: 0;
+        }
+
+        .groupdot li {
+            list-style-type: none;
+            counter-increment: gd;
+            /* border-radius: 6px; */
+            /* background: #EEE; */
+            margin-bottom: 1em;
+            padding-bottom: 0.25em;
+        }
+
+        .groupdot li:last-child {
+            margin-bottom: 0;
+        }
+
+        p.qheader {
+            border-top: 2px solid #515182;
+            background: lightgray;
+            /* border-radius: 6px; */
+            margin-bottom: 0px;
+        }
+        .qnumber {
+            display:inline-block;
+            text-align: center;
+            font-size: 1.2em;
+            color: white;
+            /* font-weight: bold; */
+            margin-right: 10px;
+            background: #515182;
+            margin: -2px 0.6em 0 0;
+            padding: 2px 2px 7px 2px;
+            width: 2em;
+            /* border-top-left-radius: 6px; */
+            /* border-bottom-left-radius: 6px; */
+        }
+
+
+    /* Custom radio widget */
+
+        /* General */
+            .groupdot input[type=radio] {
+                /* display:none; */
+                /* Need input displayed for keyboard support */
+                position: absolute;
+                left: -99999px;
+            }
+            .groupdot input[type=radio] + label {
+                height: 16px;
+                width: 16px;
+                display:inline-block;
+                padding: 0 0 0 0px;
+                cursor: pointer;
+                margin-top: 0;
+                margin-bottom: 0;
+                transform: translate(0px, 2px);
+            }
+            .groupdot input[type=radio]:focus + label {
+                outline: orange 1px solid;
+                /* box-shadow: orange 0px 1px 3px; */
+                outline-offset: -1px;
+                /* background: rgba(255, 206, 116, 0.25); */
+            }
+
+        /* State  */
+            .groupdot input[type=radio].gd1 + label {
+                background: url("ui/uncheck4.png"); 
+            }
+            .groupdot input[type=radio].gd1:hover + label {
+                background: url("ui/hcheck1.png"); 
+            }
+            .groupdot input[type=radio].gd1:checked + label {
+                background: url("ui/check1.png"); 
+            }
+
+            .groupdot input[type=radio].gd2 + label {
+                background: url("ui/uncheck4.png"); 
+            }
+            .groupdot input[type=radio].gd2:hover + label {
+                background: url("ui/hcheck2.png"); 
+            }
+            .groupdot input[type=radio].gd2:checked + label {
+                background: url("ui/check2.png"); 
+            }
+
+            .groupdot input[type=radio].gd3 + label {
+                background: url("ui/uncheck4.png"); 
+            }
+            .groupdot input[type=radio].gd3:hover + label {
+                background: url("ui/hcheck3.png"); 
+            }
+            .groupdot input[type=radio].gd3:checked + label {
+                background: url("ui/check3.png"); 
+            }
+
+            .groupdot input[type=radio].gd4 + label {
+                background: url("ui/uncheck4.png"); 
+            }
+            .groupdot input[type=radio].gd4:hover + label {
+                background: url("ui/hcheck4.png"); 
+            }
+            .groupdot input[type=radio].gd4:checked + label {
+                background: url("ui/check4.png"); 
+            }
+
+            .groupdot input[type=radio].gd5 + label {
+                background: url("ui/uncheck4.png"); 
+            }
+            .groupdot input[type=radio].gd5:hover + label {
+                background: url("ui/hcheck5.png"); 
+            }
+            .groupdot input[type=radio].gd5:checked + label {
+                background: url("ui/check5.png"); 
+            }
+
+
+        /* State text */
+            .dimmed {
+                font-style: italic;
+                color: #BBB;
+            }
+
+            .qval1 {
+                color: #CAA;
+            }
+            .qval2 {
+                color: #B8A8AA;
+            }
+            .qval3 {
+                color: #BBA;
+            }
+            .qval4 {
+                color: #ACA;
+            }
+            .qval5 {
+                color: rgb(148, 196, 148);
+            }
+
+        /* Error markers */
+
+        .survey-question-error::after {
+            content: " (required)";
+            color: red;
+            padding-left: 18px;
+            margin-left: 8px;
+            background: url('ui/error.png');
+            background-repeat: no-repeat;
+        }
+
+
+/*/////// Input Error Markers /////////////////////*/
+
+    .survey-field-error::after {
+        content: " (required)";
+        color: red;
+        padding-left: 18px;
+        margin-left: 8px;
+        background: url('ui/error.png');
+        background-repeat: no-repeat;
+    }
+    .survey-button-error::after {
+        content: " There are errors.";
+        color: red;
+        font-weight: bold;
+        padding-left: 18px;
+        margin-left: 8px;
+        background: url('ui/error.png');
+        background-repeat: no-repeat;
+    }
+    .survey-button-success::after {
+        content: " Ready to go!";
+        color: darkgreen;
+        padding-left: 18px;
+        margin-left: 8px;
+        background: url('ui/success.png');
+        background-repeat: no-repeat;
+    }
+
+
+/*/////// Bootstrap restyling /////////////////////*/
+
+    .card-header:first-child {
+        font-size: 2em;
+        border: none;
+        background: #dbdbe4;
+        padding: .2em;
+        padding-left: 1em;
+    }
+
+    .card {
+        border: 2px solid #515182;
+        background: #f4f4f7;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+

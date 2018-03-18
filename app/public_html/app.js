@@ -54,7 +54,7 @@ function processFormData(formData) {
                 $$("#nfm-content").empty().append(imgTag);
             } else if (status == "no friends") {
                 $$("#nfm-title").text("No match.");
-                $$("#nfm-content").text("Sorry! You're the first person to submit to the database.");
+                $$("#nfm-content").text("Sorry! You're the first person to submit to the database. There's nobody else to match you to.");
             } else {
                 $$("#nfm-title").text("There was an error.");
                 if (result.error) {
