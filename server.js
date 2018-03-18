@@ -10,7 +10,7 @@
 
 var path = require('path');
 var express = require('express');
-var bodyParser = require('body-parser');
+// var bodyParser = require('body-parser'); // no need
 var fs = require('fs');
 var apiRoutes = require('./app/routing/apiRoutes');
 var htmlRoutes = require('./app/routing/htmlRoutes');
@@ -34,8 +34,11 @@ process.env.htmlRoot = path.join(__dirname, "app", "public_html");
 var app = express();
 var PORT = process.env.PORT || 80;
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// No need
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(express.static(path.join('app', 'public_html')));
 
 addRoutes(apiRoutes.routes);
