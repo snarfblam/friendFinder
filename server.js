@@ -1,10 +1,12 @@
-//// Boiler Plate ////////////////////////////////////////////////
+/*// Boiler-Plate ////////////////////////////////////////////////
+ *
+ *   friend-finder
+ *   Helps you find friends. \o/ (not really... /o\)
+ *
+ *   Thomas Hudson
+ *   No Rights Reserved 
+ */
 
-/*  friend-finder
-    Helps you find friends. \o/ (not really... /o\)
-
-    Thomas Hudson
-    No Rights Reserved */
 
 //// External modules ///////////////////////////////////////////////
 
@@ -15,7 +17,8 @@ var fs = require('fs');
 var apiRoutes = require('./app/routing/apiRoutes');
 var htmlRoutes = require('./app/routing/htmlRoutes');
 
-/////////////////////////////////////////////////////////////////////
+
+//// Functions //////////////////////////////////////////////////////
 
 function addRoutes(routes) {
     routes.forEach(route => {
@@ -27,7 +30,8 @@ function addRoutes(routes) {
     });
 }
 
-/////////////////////////////////////////////////////////////////////
+
+//// Application ////////////////////////////////////////////////////
 
 process.env.htmlRoot = path.join(__dirname, "app", "public_html");
 
@@ -43,6 +47,9 @@ app.use(express.static(path.join('app', 'public_html')));
 
 addRoutes(apiRoutes.routes);
 addRoutes(htmlRoutes.routes);
+
+addRoutes(apiRoutes.lowPriorityRoutes);
+addRoutes(htmlRoutes.lowPriorityRoutes);
 
 var httpServer = app.listen(PORT, function () {
     console.log('Listening on port ' + PORT + '...');

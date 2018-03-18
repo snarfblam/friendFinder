@@ -9,7 +9,9 @@ var routes = [
             sendFile(res, 'survey.html');
         }
     },
+];
 
+var lowPriorityRoutes = [
     {
         path: "/*",
         method: "GET",
@@ -17,7 +19,6 @@ var routes = [
             sendFile(res, 'home.html');
         }
     },
-
 ];
 
 /** Returns a boolean indicating whether or not the file was sent. */
@@ -25,9 +26,10 @@ function sendFile(response, relativePath) {
     var absPath = path.join(process.env.htmlRoot, relativePath);
     if (!fs.existsSync(absPath)) return false;
     response.sendFile(absPath);
-    
+
 }
 
 module.exports = {
     routes: routes,
-};
+    lowPriorityRoutes: lowPriorityRoutes,
+}
