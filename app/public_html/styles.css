@@ -172,3 +172,11 @@ html {
 /* .groupdot input[type=radio]:checked:before { 
     content: url("checked.png"); 
 } */
+
+.hidden-modal {
+    /* display: none; */
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    background: white;
+}

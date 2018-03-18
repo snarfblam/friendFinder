@@ -20,9 +20,10 @@ var routes = [
 
             if (data && data.name && data.photoUrl && data.scores && data.scores.length == 10) {
                 responseData = friends.addFriend(data.name, data.photoUrl, data.scores);
-                responseData = responseData || { error: "No previous entries to compare to." };
+                if (responseData) responseData.result = "new friend";
+                responseData = responseData || { result: "no friends" };
             } else {
-                responseData = responseData || { error: "User data invalid." };
+                responseData = responseData || { result: "error", error: "User data invalid." };
             }
 
             // res.writeHead(200, { "Content-Type": "text/json" });

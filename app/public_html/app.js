@@ -44,8 +44,24 @@ $$("#submit-button").on('click', function (e) {
 function processFormData(formData) {
     $.post("/api/friends", formData)
         .then(function (result) { 
-            alert("You did the dun");
             console.log(result);
+            var status = result.result;
+            if (status == "new friend") {
+                $$("#nfm-title").text("Meet: " + result.name);
+                $$("#nfm-content").empty().append($("<img>").attr('src', result.photoUrl));
+            } else if (status == "no friends") {
+                $$("#nfm-title").text("No match.");
+                $$("#nfm-content").text("Sorry! You're the first person to submit to the database.");
+            } else {
+                $$("#nfm-title").text("There was an error.");
+                if (result.error) {
+                    $$("#nfm-content").text("Error details: " + result.error);
+                } else {
+                    $$("#nfm-content").text("This page could not understand the server response or error details were provided by the server.");
+                }
+            }
+            $$("#new-friend-modal").modal("show");
+            
         })
         .catch(function (err) {
             alert("The bad happened.");
