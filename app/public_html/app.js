@@ -161,7 +161,9 @@ function markTextFieldInvalid(inputID) {
 
 function markSurveyQuestionInvalid(index) {
     var idSelector = '#q' + index + "item";
-    $$(idSelector).addClass("survey-question-error");
+    var questionItem = $$(idSelector);
+    questionItem.addClass("survey-question-error");
+    questionItem.find(".dimmed").remove();
 }
 
 function clearFormErrorStyles() {
