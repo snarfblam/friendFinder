@@ -48,7 +48,10 @@ function processFormData(formData) {
             var status = result.result;
             if (status == "new friend") {
                 $$("#nfm-title").text("Meet: " + result.name);
-                $$("#nfm-content").empty().append($("<img>").attr('src', result.photoUrl));
+                var imgTag = $("<img>")
+                    .attr('src', result.photoUrl)
+                    .addClass("img-fluid");
+                $$("#nfm-content").empty().append(imgTag);
             } else if (status == "no friends") {
                 $$("#nfm-title").text("No match.");
                 $$("#nfm-content").text("Sorry! You're the first person to submit to the database.");

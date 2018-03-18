@@ -1,20 +1,60 @@
 html {
-    font-family: sans-serif;
+    font-family: 'comic sans ms', sans-serif;
+    background: url('bg.png');
+}
+
+body {
+    border-radius: 12px;
+    width: calc(100% - 20px);
+    max-width: 800px;
+    min-width: 320px;
+    margin: 20px auto;
+    box-shadow: inset 0px 0px 2px 0px black, 6px 7px 18px black;
+    padding: 1em;
 }
 
 .groupdot {
     padding-left: 0;
     counter-reset: gd;
+    margin-bottom: 0;
 }
 .groupdot li {
     list-style-type: none;
     counter-increment: gd;
+    /* border-radius: 6px; */
+    /* background: #EEE; */
+    margin-bottom: 1em;
+    padding-bottom: 0.25em;
 }
 
-.groupdot li:before {
+.groupdot li:last-child {
+    margin-bottom: 0;
+}
+
+p.qheader {
+    border-top: 2px solid #515182;
+    background: lightgray;
+    /* border-radius: 6px; */
+    margin-bottom: 0px;
+}
+.qnumber {
+    display:inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    /* font-weight: bold; */
+    margin-right: 10px;
+    background: #515182;
+    margin: -2px 0.6em 0 0;
+    padding: 2px 2px 7px 2px;
+    width: 2em;
+    /* border-top-left-radius: 6px; */
+    /* border-bottom-left-radius: 6px; */
+}
+/* .groupdot li:before {
     content: counter(gd);
     display: inline;
-}
+} */
 
 .groupdot input[type=radio] {
     /* display:none; */
@@ -114,15 +154,9 @@ html {
 }
 
 .qval5 {
-    color: #ADA;
+    color: rgb(148, 196, 148);
 }
 
-.qheader {
-    font-size: 1.2em;
-    color: #080;
-    font-weight: bold;
-    margin-right: 10px;
-}
 
 .survey-question-error::after {
     content: " (required)";
@@ -179,4 +213,24 @@ html {
     top: 100px;
     left: 100px;
     background: white;
+}
+
+/*/ Bootstrap restyling /////////////////////*/
+
+.card-header:first-child {
+    font-size: 2em;
+    border: none;
+    background: #dbdbe4;
+    padding: .2em;
+    padding-left: 1em;
+}
+
+.card {
+    border: 2px solid #515182;
+    background: #f4f4f7;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 840px) {
 }

@@ -4,199 +4,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Survey</title>
 </head>
 <body>
     <div class="px-4">
         
         <form>
-            <h3>Who are you?</h3>
-            <hr>
-            <div class="form-group">
-                <label for="survey-name">Name</label>
-                <input id="survey-name" placeholder="Name" class="form-control">
+            <div class="card">
+                <header class="card-header">Who are you?</header>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="survey-name">Name</label>
+                        <input id="survey-name" placeholder="Name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="survey-photoUrl">Photo URL</label>
+                        <input id="survey-photoUrl" placeholder="Photo URL" class="form-control">
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="survey-photoUrl">Photo URL</label>
-                <input id="survey-photoUrl" placeholder="Photo URL" class="form-control">
-            </div>
-            <hr>
-            <h3>Tell us how you <em>really</em> feel.</h3>
-            <ul class="groupdot">
-                <li id="q1item">
-                    <p class="qheader">
-                        <span class="qnumber">1</span>
-                        Dogs are better than cats.
-                    </p>
-                    <input type="radio" name="q1" id="q1v1" class="gd1" value="1">
-                    <label for="q1v1"></label
-                    ><input type="radio" name="q1" id="q1v2" class="gd2" value="2"
-                    ><label for="q1v2"></label
-                    ><input type="radio" name="q1" id="q1v3" class="gd3" value="3"
-                    ><label for="q1v3"></label
-                    ><input type="radio" name="q1" id="q1v4" class="gd4" value="4"
-                    ><label for="q1v4"></label
-                    ><input type="radio" name="q1" id="q1v5" class="gd5" value="5"
-                    ><label for="q1v5"></label>
-                    <span id="q1value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q2item">
-                    <p class="qheader">
-                        <span class="qnumber">2</span>
-                        Video games are awesome.
-                    </p>                
-                    <input type="radio" name="q2" id="q2v1" class="gd1" value="1">
-                    <label for="q2v1"></label
-                    ><input type="radio" name="q2" id="q2v2" class="gd2" value="2"
-                    ><label for="q2v2"></label
-                    ><input type="radio" name="q2" id="q2v3" class="gd3" value="3"
-                    ><label for="q2v3"></label
-                    ><input type="radio" name="q2" id="q2v4" class="gd4" value="4"
-                    ><label for="q2v4"></label
-                    ><input type="radio" name="q2" id="q2v5" class="gd5" value="5"
-                    ><label for="q2v5"></label>
-                    <span id="q2value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q3item">
-                    <p class="qheader">
-                        <span class="qnumber">3</span>
-                        Musicals are obnoxious.
-                    </p>       
-                    <input type="radio" name="q3" id="q3v1" class="gd1" value="1">
-                    <label for="q3v1"></label
-                    ><input type="radio" name="q3" id="q3v2" class="gd2" value="2"
-                    ><label for="q3v2"></label
-                    ><input type="radio" name="q3" id="q3v3" class="gd3" value="3"
-                    ><label for="q3v3"></label
-                    ><input type="radio" name="q3" id="q3v4" class="gd4" value="4"
-                    ><label for="q3v4"></label
-                    ><input type="radio" name="q3" id="q3v5" class="gd5" value="5"
-                    ><label for="q3v5"></label>
-                    <span id="q3value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q4item">
-                    <p class="qheader">
-                        <span class="qnumber">4</span>
-                        Programming is just plain fun.
-                    </p>                
-                    <input type="radio" name="q4" id="q4v1" class="gd1" value="1">
-                    <label for="q4v1"></label
-                    ><input type="radio" name="q4" id="q4v2" class="gd2" value="2"
-                    ><label for="q4v2"></label
-                    ><input type="radio" name="q4" id="q4v3" class="gd3" value="3"
-                    ><label for="q4v3"></label
-                    ><input type="radio" name="q4" id="q4v4" class="gd4" value="4"
-                    ><label for="q4v4"></label
-                    ><input type="radio" name="q4" id="q4v5" class="gd5" value="5"
-                    ><label for="q4v5"></label>
-                    <span id="q4value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q5item">
-                    <p class="qheader">
-                        <span class="qnumber">5</span>
-                        Dogs are better than cats
-                    </p>                
-                    <input type="radio" name="q5" id="q5v1" class="gd1" value="1">
-                    <label for="q5v1"></label
-                    ><input type="radio" name="q5" id="q5v2" class="gd2" value="2"
-                    ><label for="q5v2"></label
-                    ><input type="radio" name="q5" id="q5v3" class="gd3" value="3"
-                    ><label for="q5v3"></label
-                    ><input type="radio" name="q5" id="q5v4" class="gd4" value="4"
-                    ><label for="q5v4"></label
-                    ><input type="radio" name="q5" id="q5v5" class="gd5" value="5"
-                    ><label for="q5v5"></label>
-                    <span id="q5value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q6item">
-                    <p class="qheader">
-                        <span class="qnumber">6</span>
-                        Dogs are better than cats
-                    </p>                
-                    <input type="radio" name="q6" id="q6v1" class="gd1" value="1">
-                    <label for="q6v1"></label
-                    ><input type="radio" name="q6" id="q6v2" class="gd2" value="2"
-                    ><label for="q6v2"></label
-                    ><input type="radio" name="q6" id="q6v3" class="gd3" value="3"
-                    ><label for="q6v3"></label
-                    ><input type="radio" name="q6" id="q6v4" class="gd4" value="4"
-                    ><label for="q6v4"></label
-                    ><input type="radio" name="q6" id="q6v5" class="gd5" value="5"
-                    ><label for="q6v5"></label>
-                    <span id="q6value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q7item">
-                    <p class="qheader">
-                        <span class="qnumber">7</span>
-                        Dogs are better than cats
-                    </p>                
-                    <input type="radio" name="q7" id="q7v1" class="gd1" value="1">
-                    <label for="q7v1"></label
-                    ><input type="radio" name="q7" id="q7v2" class="gd2" value="2"
-                    ><label for="q7v2"></label
-                    ><input type="radio" name="q7" id="q7v3" class="gd3" value="3"
-                    ><label for="q7v3"></label
-                    ><input type="radio" name="q7" id="q7v4" class="gd4" value="4"
-                    ><label for="q7v4"></label
-                    ><input type="radio" name="q7" id="q7v5" class="gd5" value="5"
-                    ><label for="q7v5"></label>
-                    <span id="q7value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q8item">
-                    <p class="qheader">
-                        <span class="qnumber">8</span>
-                        Dogs are better than cats
-                    </p>                
-                    <input type="radio" name="q8" id="q8v1" class="gd1" value="1">
-                    <label for="q8v1"></label
-                    ><input type="radio" name="q8" id="q8v2" class="gd2" value="2"
-                    ><label for="q8v2"></label
-                    ><input type="radio" name="q8" id="q8v3" class="gd3" value="3"
-                    ><label for="q8v3"></label
-                    ><input type="radio" name="q8" id="q8v4" class="gd4" value="4"
-                    ><label for="q8v4"></label
-                    ><input type="radio" name="q8" id="q8v5" class="gd5" value="5"
-                    ><label for="q8v5"></label>
-                    <span id="q8value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q9item">
-                    <p class="qheader">
-                        <span class="qnumber">9</span>
-                        Dogs are better than cats
-                    </p>                
-                    <input type="radio" name="q9" id="q9v1" class="gd1" value="1">
-                    <label for="q9v1"></label
-                    ><input type="radio" name="q9" id="q9v2" class="gd2" value="2"
-                    ><label for="q9v2"></label
-                    ><input type="radio" name="q9" id="q9v3" class="gd3" value="3"
-                    ><label for="q9v3"></label
-                    ><input type="radio" name="q9" id="q9v4" class="gd4" value="4"
-                    ><label for="q9v4"></label
-                    ><input type="radio" name="q9" id="q9v5" class="gd5" value="5"
-                    ><label for="q9v5"></label>
-                    <span id="q9value"><span class="dimmed">make a selection</span></span>
-                </li>
-                <li id="q10item">
-                    <p class="qheader">
-                        <span class="qnumber">10</span>
-                        Dogs are better than cats
-                    </p>                
-                    <input type="radio" name="q10" id="q10v1" class="gd1" value="1">
-                    <label for="q10v1"></label
-                    ><input type="radio" name="q10" id="q10v2" class="gd2" value="2"
-                    ><label for="q10v2"></label
-                    ><input type="radio" name="q10" id="q10v3" class="gd3" value="3"
-                    ><label for="q10v3"></label
-                    ><input type="radio" name="q10" id="q10v4" class="gd4" value="4"
-                    ><label for="q10v4"></label
-                    ><input type="radio" name="q10" id="q10v5" class="gd5" value="5"
-                    ><label for="q10v5"></label>
-                    <span id="q10value"><span class="dimmed">make a selection</span></span>
-                </li>
 
-            </ul>
+            <div class="card">
+                <header class="card-header">Tell us how you <em>really</em> feel.</header>
+                <div class="card-body">
+                    <ul class="groupdot">
+                        <li id="q1item">
+                            <p class="qheader">
+                                <span class="qnumber">1</span>
+                                Dogs are better than cats.
+                            </p>
+                            <input type="radio" name="q1" id="q1v1" class="gd1" value="1">
+                            <label for="q1v1"></label
+                            ><input type="radio" name="q1" id="q1v2" class="gd2" value="2"
+                            ><label for="q1v2"></label
+                            ><input type="radio" name="q1" id="q1v3" class="gd3" value="3"
+                            ><label for="q1v3"></label
+                            ><input type="radio" name="q1" id="q1v4" class="gd4" value="4"
+                            ><label for="q1v4"></label
+                            ><input type="radio" name="q1" id="q1v5" class="gd5" value="5"
+                            ><label for="q1v5"></label>
+                            <span id="q1value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q2item">
+                            <p class="qheader">
+                                <span class="qnumber">2</span>
+                                Video games are awesome.
+                            </p>                
+                            <input type="radio" name="q2" id="q2v1" class="gd1" value="1">
+                            <label for="q2v1"></label
+                            ><input type="radio" name="q2" id="q2v2" class="gd2" value="2"
+                            ><label for="q2v2"></label
+                            ><input type="radio" name="q2" id="q2v3" class="gd3" value="3"
+                            ><label for="q2v3"></label
+                            ><input type="radio" name="q2" id="q2v4" class="gd4" value="4"
+                            ><label for="q2v4"></label
+                            ><input type="radio" name="q2" id="q2v5" class="gd5" value="5"
+                            ><label for="q2v5"></label>
+                            <span id="q2value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q3item">
+                            <p class="qheader">
+                                <span class="qnumber">3</span>
+                                Musicals are obnoxious.
+                            </p>       
+                            <input type="radio" name="q3" id="q3v1" class="gd1" value="1">
+                            <label for="q3v1"></label
+                            ><input type="radio" name="q3" id="q3v2" class="gd2" value="2"
+                            ><label for="q3v2"></label
+                            ><input type="radio" name="q3" id="q3v3" class="gd3" value="3"
+                            ><label for="q3v3"></label
+                            ><input type="radio" name="q3" id="q3v4" class="gd4" value="4"
+                            ><label for="q3v4"></label
+                            ><input type="radio" name="q3" id="q3v5" class="gd5" value="5"
+                            ><label for="q3v5"></label>
+                            <span id="q3value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q4item">
+                            <p class="qheader">
+                                <span class="qnumber">4</span>
+                                Programming is just plain fun.
+                            </p>                
+                            <input type="radio" name="q4" id="q4v1" class="gd1" value="1">
+                            <label for="q4v1"></label
+                            ><input type="radio" name="q4" id="q4v2" class="gd2" value="2"
+                            ><label for="q4v2"></label
+                            ><input type="radio" name="q4" id="q4v3" class="gd3" value="3"
+                            ><label for="q4v3"></label
+                            ><input type="radio" name="q4" id="q4v4" class="gd4" value="4"
+                            ><label for="q4v4"></label
+                            ><input type="radio" name="q4" id="q4v5" class="gd5" value="5"
+                            ><label for="q4v5"></label>
+                            <span id="q4value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q5item">
+                            <p class="qheader">
+                                <span class="qnumber">5</span>
+                                Eating healthy is important.
+                            </p>                
+                            <input type="radio" name="q5" id="q5v1" class="gd1" value="1">
+                            <label for="q5v1"></label
+                            ><input type="radio" name="q5" id="q5v2" class="gd2" value="2"
+                            ><label for="q5v2"></label
+                            ><input type="radio" name="q5" id="q5v3" class="gd3" value="3"
+                            ><label for="q5v3"></label
+                            ><input type="radio" name="q5" id="q5v4" class="gd4" value="4"
+                            ><label for="q5v4"></label
+                            ><input type="radio" name="q5" id="q5v5" class="gd5" value="5"
+                            ><label for="q5v5"></label>
+                            <span id="q5value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q6item">
+                            <p class="qheader">
+                                <span class="qnumber">6</span>
+                                Dogs are better than cats
+                            </p>                
+                            <input type="radio" name="q6" id="q6v1" class="gd1" value="1">
+                            <label for="q6v1"></label
+                            ><input type="radio" name="q6" id="q6v2" class="gd2" value="2"
+                            ><label for="q6v2"></label
+                            ><input type="radio" name="q6" id="q6v3" class="gd3" value="3"
+                            ><label for="q6v3"></label
+                            ><input type="radio" name="q6" id="q6v4" class="gd4" value="4"
+                            ><label for="q6v4"></label
+                            ><input type="radio" name="q6" id="q6v5" class="gd5" value="5"
+                            ><label for="q6v5"></label>
+                            <span id="q6value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q7item">
+                            <p class="qheader">
+                                <span class="qnumber">7</span>
+                                Dogs are better than cats
+                            </p>                
+                            <input type="radio" name="q7" id="q7v1" class="gd1" value="1">
+                            <label for="q7v1"></label
+                            ><input type="radio" name="q7" id="q7v2" class="gd2" value="2"
+                            ><label for="q7v2"></label
+                            ><input type="radio" name="q7" id="q7v3" class="gd3" value="3"
+                            ><label for="q7v3"></label
+                            ><input type="radio" name="q7" id="q7v4" class="gd4" value="4"
+                            ><label for="q7v4"></label
+                            ><input type="radio" name="q7" id="q7v5" class="gd5" value="5"
+                            ><label for="q7v5"></label>
+                            <span id="q7value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q8item">
+                            <p class="qheader">
+                                <span class="qnumber">8</span>
+                                Dogs are better than cats
+                            </p>                
+                            <input type="radio" name="q8" id="q8v1" class="gd1" value="1">
+                            <label for="q8v1"></label
+                            ><input type="radio" name="q8" id="q8v2" class="gd2" value="2"
+                            ><label for="q8v2"></label
+                            ><input type="radio" name="q8" id="q8v3" class="gd3" value="3"
+                            ><label for="q8v3"></label
+                            ><input type="radio" name="q8" id="q8v4" class="gd4" value="4"
+                            ><label for="q8v4"></label
+                            ><input type="radio" name="q8" id="q8v5" class="gd5" value="5"
+                            ><label for="q8v5"></label>
+                            <span id="q8value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q9item">
+                            <p class="qheader">
+                                <span class="qnumber">9</span>
+                                Dogs are better than cats
+                            </p>                
+                            <input type="radio" name="q9" id="q9v1" class="gd1" value="1">
+                            <label for="q9v1"></label
+                            ><input type="radio" name="q9" id="q9v2" class="gd2" value="2"
+                            ><label for="q9v2"></label
+                            ><input type="radio" name="q9" id="q9v3" class="gd3" value="3"
+                            ><label for="q9v3"></label
+                            ><input type="radio" name="q9" id="q9v4" class="gd4" value="4"
+                            ><label for="q9v4"></label
+                            ><input type="radio" name="q9" id="q9v5" class="gd5" value="5"
+                            ><label for="q9v5"></label>
+                            <span id="q9value"><span class="dimmed">make a selection</span></span>
+                        </li>
+                        <li id="q10item">
+                            <p class="qheader">
+                                <span class="qnumber">10</span>
+                                Dogs are better than cats
+                            </p>                
+                            <input type="radio" name="q10" id="q10v1" class="gd1" value="1">
+                            <label for="q10v1"></label
+                            ><input type="radio" name="q10" id="q10v2" class="gd2" value="2"
+                            ><label for="q10v2"></label
+                            ><input type="radio" name="q10" id="q10v3" class="gd3" value="3"
+                            ><label for="q10v3"></label
+                            ><input type="radio" name="q10" id="q10v4" class="gd4" value="4"
+                            ><label for="q10v4"></label
+                            ><input type="radio" name="q10" id="q10v5" class="gd5" value="5"
+                            ><label for="q10v5"></label>
+                            <span id="q10value"><span class="dimmed">make a selection</span></span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            
             <button id="submit-button" type="submit">Submit</button> <span id="submit-button-error"></span>
         </form>
     </div>
@@ -208,23 +216,23 @@
 
     <!-- <div id="new-friend-modal" class="hidden-modal modal" role="dialog">sup dog!!!!!!</div> -->
     <div class="modal fade" id="new-friend-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="nfm-title">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body" id="nfm-content">
-                  ...
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="nfm-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
             </div>
-          </div>
+            <div class="modal-body" id="nfm-content">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
